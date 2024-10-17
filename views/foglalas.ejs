@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+  <div class="alert alert-danger w-50 container mt-5 alert-dismissible show" role="alert" id="alert">
+    <h3 class="alert-header">Oh-oh</h3><hr>
+    <% for(let err of errors){ %>
+      <p><%= err %></p>
+    <% } %>
+  </div>
+  <fieldset>
+    <form method="post" class="container mt-5 border" style="width: 350px;">
+      <legend>Foglalás</legend>
+        <label for="nev">Név: </label>
+        <input type="text" name="nev" id="" value="<% data.nev %>"><br><br>
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="" value="<% data.email %>"><br><br>
+        <label for="datum">Dátum: </label>
+        <input type="date" name="datum" id="" value="<% data.datum %>"><br><br>
+        <label for="nezok">Nézők száma: </label>
+        <input type="number" name="nezok" id="" value="<% data.nezok %>"><br><br>
+        <input type="submit" value="Foglalás" style="margin-left: 100px;">
+      </form>
+  </fieldset>
+</body>
+</html>
