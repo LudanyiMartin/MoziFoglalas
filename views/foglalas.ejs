@@ -17,13 +17,13 @@
     <form method="post" class="container mt-5 border" style="width: 350px;">
       <legend>Foglalás</legend>
         <label for="nev">Név: </label>
-        <input type="text" name="nev" id="" value="<% data.nev %>"><br><br>
+        <input type="text" name="nev" id="" value="<%= data.nev %>"><br><br>
         <label for="email">Email: </label>
-        <input type="text" name="email" id="" value="<% data.email %>"><br><br>
+        <input type="text" name="email" id="" value="<%= data.email %>"><br><br>
         <label for="datum">Dátum: </label>
-        <input type="date" name="datum" id="" value="<% data.datum %>"><br><br>
+        <input type="date" name="datum" id="" value="<%= data.datum %>"><br><br>
         <label for="nezok">Nézők száma: </label>
-        <input type="number" name="nezok" id="" value="<% data.nezok %>"><br><br>
+        <input type="number" name="nezok" id="" value="<%= data.nezok %>"><br><br>
         <input type="submit" value="Foglalás" style="margin-left: 100px;">
       </form>
   </fieldset>
